@@ -38,7 +38,7 @@ define( 'DB_PASSWORD', 'dbuser' );
 define( 'DB_HOST', 'localhost' );
 
 /** データベースのテーブルを作成する際のデータベースの文字セット */
-define( 'DB_CHARSET', 'utf8' );
+define( 'DB_CHARSET', 'utf8mb4' );
 
 /** データベースの照合順序 (ほとんどの場合変更する必要はありません) */
 define( 'DB_COLLATE', '' );
@@ -52,14 +52,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         '{x1O I|d%M7J^@:Ow[y_ojdjYn^--W$rp|NcL+rR|mC!BY++c7-C$4+qvi%F7,.^');
-define('SECURE_AUTH_KEY',  '-oc_?^.H*,rq?s/k#pwm.(Ycvw8~=KZ<dt2?,jZrzR~1f<);  4||yxsPa4-jRX[');
-define('LOGGED_IN_KEY',    'yCYB?d`HpC?Ni]k;(P&t*y|fOWf-|zaYO?U`jP74#8.{fSN@-* (RU@5(k24u!-<');
-define('NONCE_KEY',        ' p6bYwxu1HvWc>//D.+ESY{)2i,5[epf6iqIU^-qb9s|S8-Zj<@2l$KNxio+3qaa');
-define('AUTH_SALT',        'Gs+:%zZB.j3,=0(g(vl;)wQuOaGf4&TW&imHW#0Q9zpCVlFSs#DfR` Ca.c:K{Z!');
-define('SECURE_AUTH_SALT', 'tP5o6|_*dc/*JAs!^&a<NZ<(Op:p3xx`Mhe5 Is<4&>DJE7lGJU)1D!fY>x<804G');
-define('LOGGED_IN_SALT',   'yYwy*J/esY<w$+gh~@{2_lib+Ua4%N+6h/,(3-i6IAl3/-+hf94!XXk u{m+$K%T');
-define('NONCE_SALT',       ';eww[qS,. ^)la]F-BQ{,|efn,!##w`,ESz,m+|$33KzKj]}>.[ixfNy%7O8PH[Z');
+define( 'AUTH_KEY',         'O]Qc#Y0xBTx#eDZBH,BgKjR9Y$CD>a7a*ZNqm`Fo+nC4s{P)=e~W(1~zE%Ch5|C_' );
+define( 'SECURE_AUTH_KEY',  '^X?mqzS-L*)Sh6GD7=.p3UP|ap}WGGvwT2nz?`a7_|7X8VZr&t1_)2m^pcaZ]ceP' );
+define( 'LOGGED_IN_KEY',    ' J>kx<_eFAB:KH8>MlCF}cu]v[3?*Xj4 Xe(^UL zmX:a5bGPimKk>|XQz.t=~cx' );
+define( 'NONCE_KEY',        'W|*vxx08Lud[9*H`#HgzR]R*X*.y71w$:+9puZ~1J:D9e>B&jL7#R_z?rAp`*4AP' );
+define( 'AUTH_SALT',        'eu7B mTWjC3)dh{/pH]16Hf{VYrD4jd@YO82/h<&APM~Z7Dei}V(^lfVrV3Yb]Ik' );
+define( 'SECURE_AUTH_SALT', '3j)f;r&[/7(jD}?d%^(R3}d^<}Rm05m%_N?fmt6hIOE7XO6fz&QL{iJ(y:%yd)Z+' );
+define( 'LOGGED_IN_SALT',   'q<ovom8.leaL<1EYcTDF2 C*!:+<bK|qEYHJ*A0`)W8JV2#yX9eMH{FX2u2mx=L6' );
+define( 'NONCE_SALT',       'o;pK!fBoAC#ua6FCg#iyde,H]>snf|x[%jYg;xI]6c~t$a;A:qu4 0x7 15c`Iaj' );
 
 /**#@-*/
 
