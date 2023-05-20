@@ -1,0 +1,34 @@
+﻿@charset "UTF-8";
+
+/* -------------------------------
+サイト名： OFFICIAL WEB SITE
+作成日：2022.01.10
+修正日：
+製作者：hayakawa
+ * ------------------------------- */
+
+/* mail_contents
+----------------------------------------------------------- */
+.mail_contents {
+	line-height: 1.4;
+}
+.mail_detail {
+	margin-top: 20px;
+	font-size: 14px;
+}
+.mail_detail--chairman {
+	margin-top: 20px;
+	font-size: 12px;
+	color:#555;
+	line-height: 1.4;
+}
+.mail_sponsor {
+	padding: 30px 30px 0px 50px;
+	color: #555;
+	font-size: 12px;
+	text-align: right;
+	line-height: 1.4;
+}
+.mail_detail--note {
+	color: #f00;
+}

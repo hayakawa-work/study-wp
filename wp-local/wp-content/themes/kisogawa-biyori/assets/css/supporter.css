@@ -1,0 +1,21 @@
+﻿@charset "UTF-8";
+
+/* -------------------------------
+サイト名： OFFICIAL WEB SITE
+作成日：2022.01.10
+修正日：
+製作者：hayakawa
+ * ------------------------------- */
+
+/* supporter_detail
+----------------------------------------------------------- */
+.supporter_detail {
+	font-size: 14px;
+	line-height: 1.4;
+}
+.supporter_detail li {
+	margin-top: 20px;
+}
+.supporter_detail li:last-child {
+	font-size: 12px;
+}

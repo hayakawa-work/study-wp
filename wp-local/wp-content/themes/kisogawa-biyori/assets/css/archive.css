@@ -1,0 +1,81 @@
+﻿@charset "UTF-8";
+
+/* -------------------------------
+サイト名： OFFICIAL WEB SITE
+作成日：2022.01.10
+修正日：
+製作者：hayakawa
+ * ------------------------------- */
+
+/* archive_list
+----------------------------------------------------------- */
+.archive {
+	overflow-wrap: break-word;
+	max-width: 980px;
+	margin: 0 auto;
+}
+.archive_list {
+	display: inline-block;
+	width: 100%;
+}
+.archive_list li {
+	display: block;
+	float: left;
+	width: 300px;
+	min-height: 232px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.archive_list li span {
+	display: inline-block;
+	width: 100%;
+	max-width: 590px;
+	margin-top: 2px;
+	text-align: left;
+}
+.archive_list li a {
+	display: inline-block;
+	width: 300px;
+	height: 200px;
+	position: relative;
+	background-color: #f0fff0;
+}
+.archive_list li a img {
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-height: 100%;
+	max-width: 100%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+}
+
+/* SP
+----------------------------------------------------------- */
+@media only screen and (max-width: 980px) {
+	.archive_contents {
+		max-width: 590px;
+	}
+	.archive_list li {
+		margin-left: auto;
+		float: auto;
+		width: 100%;
+	}
+	.archive_list li a {
+		max-width: 590px;
+    max-height: 395px;
+    height: 100%;
+    width: 100%;
+	}
+	.archive_list li a img {
+		display: block;
+		position: static;
+		top: 0;
+		left: 0;
+		margin-right: auto;
+		transform: translate(0, 0);
+		margin: auto;
+	}
+	
+}

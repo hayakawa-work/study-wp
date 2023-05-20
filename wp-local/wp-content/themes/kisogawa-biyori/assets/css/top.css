@@ -1,0 +1,316 @@
+﻿@charset "UTF-8";
+
+/* -------------------------------
+サイト名： OFFICIAL WEB SITE
+作成日：2022.01.10
+修正日：
+製作者：hayakawa
+ * ------------------------------- */
+
+/* top_image
+----------------------------------------------------------- */
+.top_image {
+	display: inline-flex;
+	align-items: center;
+	justify-items: center;
+	max-width: 100%;
+	width: 100%;
+	height: 100%;
+}
+.top_image img {
+	width: 100%;
+}
+
+/* slider
+----------------------------------------------------------- */
+.slider {
+	margin-top: 15px;
+	overflow-y: hidden;
+}
+.slider li {
+	display: flex;
+	justify-items: center;
+	align-items: center;
+	max-width: 100%;
+	max-height: 100%;
+}
+.slick-slide img {
+	display: inline-block;
+	margin: 0 auto;
+	vertical-align: middle;
+	width: auto;
+	height: auto;
+	max-height: 100%;;
+	max-width: 100%;
+}
+.slick-arrow {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	z-index: 1;
+	font-size: 0;
+	line-height: 0;
+	color: transparent;
+	border: none;
+	outline: none;
+	padding: 0;
+	width: 20px;
+	height: 40px;
+	background: transparent url('../img/btn_prev_n.png') no-repeat 0 0 / 20px 20px;
+	-webkit-tap-highlight-color: transparent;
+	/* ダブルタップでのズームの無効化 iOS13以前の対応｜念のため複数箇所にセット */
+	-webkit-touch-action: manipulation;
+	touch-action: manipulation;
+}
+.slick-prev {
+	left: 0;
+}
+.slick-next {
+	right: 0;
+	background: url('../img/btn_next_n.png') no-repeat 0 0 / 20px 20px;
+}
+.slick-disabled {
+	visibility: hidden;
+}
+.slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.slick-dots li {
+	position: relative;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+	padding: 0;
+	cursor: pointer;
+}
+.slick-dots li button:before {
+	font-family: 'slick';
+	content: '•';
+	font-size: 40px;
+	line-height: 20px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	opacity: .25;
+	color: black;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li button {
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	width: 20px;
+	height: 20px;
+	padding: 5px;
+	cursor: pointer;
+	color: transparent;
+	border: 0;
+	outline: none;
+	background: transparent;
+}
+.slick-dots li.slick-active button:before {
+	opacity: .75;
+	color: black;
+}
+
+/* news
+----------------------------------------------------------- */
+.news_title {
+	padding: 5px 0;
+	border-top: dotted 1px #ccc;
+	border-bottom: dotted 1px #ccc;
+	font-size: 16px;
+}
+
+/* news_detail_content
+----------------------------------------------------------- */
+.news_detail_content {
+	margin-top: 15px;	
+}
+.news_detail_content p + p {
+	margin-top: 15px;
+}
+.news_detail_content {
+	line-height: 1.3;
+}
+
+/* archive_detail_contents
+----------------------------------------------------------- */
+.news_contents {
+	padding-bottom: 25px;
+	max-width: 645px;
+}
+.news_contents section {
+	margin-top: 20px;
+}
+.news_contents section h3 {
+	font-size: 14px;
+	line-height: 1.3;
+}
+
+/* works_header
+----------------------------------------------------------- */
+.works_header {
+	padding: 30px 15px;
+	margin-top: 20px;
+	align-items: center;
+	justify-content: space-between;
+	border: dotted 1px #ccc;
+}
+.works_header .works_profile {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+	margin-top: 10px;
+	place-content: center;
+}
+.works_header .works_profile div + div {
+	padding-left: 8px;
+}
+.works_header .works_profile_title {
+	min-width: 100px;
+	font-size: 13px;
+}
+.works_header .title_caption {
+	display: inline-block;
+	margin-top: 9px;
+	font-size: 12px;
+	line-height: 1.3;
+}
+.works_header .works_profile_photo  {
+	min-width: 110px;
+}
+.works_profile_photo img {
+	width: 100%;
+}
+.works_header_title a {
+	display: inline-block;
+	content: "■";
+	font-weight: bold;
+}
+.works_header_title {
+	font-size: 14px;
+	line-height: 1.3;
+}
+
+/* works_event
+----------------------------------------------------------- */
+.works {
+	margin-top: 20px;
+}
+.works_event dl {
+	display: table;
+	width: 100%;
+	margin-top: 10px;
+}
+.works_event dl dt {
+	width: 10%;
+	padding-top: 3px;
+	padding-right: 8px;
+	min-width: 55px;
+	font-size: 11px;
+}
+.works_event dl dd {
+	float: left;
+	clear: both;
+	font-size: 12px;
+	line-height: 1.5;
+}
+.works_event dl dt,
+.works_event dl dd {
+	display: table-cell;
+	vertical-align: top;
+	word-break: break-all;
+}
+.works_event dl dt span,
+.works_event dl dd span {
+	display: inline-block;
+}
+
+/* works_photos
+----------------------------------------------------------- */
+.works_photos {
+	text-align: center;
+}
+.works_photos h3 {
+	text-align: left;
+	border-bottom: dotted 1px #ccc;
+}
+.works_photos_list {
+	display: inline-flex;
+	align-content: center;
+	justify-content: center;
+}
+.works_photos_list li + li {
+	margin-left: 15px;
+}
+.works_photos_list li {
+	display: block;
+	float: left;
+	margin-top: 20px;
+}
+.works_photos_list li a {
+	display: inline-flex;
+	height: 150px;
+	width: 150px;
+	overflow: hidden;
+	position: relative;
+}
+.works_photos_list li a img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-width: 100%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	display: block;
+}
+
+/* about_npo
+----------------------------------------------------------- */
+.about_npo {
+	text-align: right;
+	font-size: 11px;
+	border-top: dotted 1px #ccc;	
+}
+.about_npo a span {
+	display: inline-block;
+	margin-top: 10px;
+}
+
+/* SP
+----------------------------------------------------------- */
+@media only screen and (max-width: 980px) {
+	.works_photos_list li {
+		float: auto;
+		width: 50%;
+	}
+	.works_photos_list li a {
+    height: 100%;
+    width: 100%;
+	}
+	.works_photos_list li a img {
+		display: block;
+		position: static;
+		top: 0;
+		left: 0;
+		margin-right: auto;
+		transform: translate(0, 0);
+		margin: auto;
+	}
+}
+@media only screen and (max-width: 590px) {
+	.works_photos_list li {
+		width: 100%;
+	}
+}	
+

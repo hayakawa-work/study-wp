@@ -1,0 +1,171 @@
+﻿@charset "UTF-8";
+
+/* -------------------------------
+サイト名： OFFICIAL WEB SITE
+作成日：2022.01.10
+修正日：
+製作者：hayakawa
+ * ------------------------------- */
+
+/* archive_detail
+----------------------------------------------------------- */
+.archive_detail {
+	overflow-wrap: break-word;
+}
+
+/* archive_detail_contents
+----------------------------------------------------------- */
+.archive_detail_contents {
+	padding-bottom: 25px;
+	max-width: 645px;
+	margin: 0 auto;
+}
+.archive_detail_contents section {
+	margin-top: 20px;
+}
+.archive_detail_contents section h3 {
+	font-size: 14px;
+	line-height: 1.3;
+	padding: 3px;
+}
+
+/* works_header
+----------------------------------------------------------- */
+.works_header {
+	padding: 30px 15px;
+	margin-top: 20px;
+	align-items: center;
+	justify-content: space-between;
+	border: dotted 1px #ccc;
+}
+.works_header .works_profile {
+	display: table;
+	width: 100%;
+	margin-top: 10px;
+}
+.works_header .works_profile_title {
+	display: table-cell;
+	vertical-align: middle;
+	min-width: 100px;
+	font-size: 13px;
+}
+.works_header .title_caption {
+	display: inline-block;
+	margin-top: 9px;
+	font-size: 12px;
+	line-height: 1.3;
+}
+.works_header .works_profile_photo  {
+	display: table-cell;
+	vertical-align: middle;
+	min-width: 110px;
+	padding-left: 8px;
+}
+.works_profile_photo img {
+	width: 100%;
+}
+.works_header_title a {
+	display: inline-block;
+	content: "■";
+	font-weight: bold;
+}
+.works_header_title {
+	font-size: 14px;
+	line-height: 1.3;
+}
+
+/* works_event
+----------------------------------------------------------- */
+.works {
+	margin-top: 20px;
+}
+.works_event dl {
+	display: table;
+	width: 100%;
+	margin-top: 10px;
+}
+.works_event dl dt {
+	width: 10%;
+	padding-top: 3px;
+	padding-right: 8px;
+	min-width: 55px;
+	font-size: 11px;
+}
+.works_event dl dd {
+	float: left;
+	clear: both;
+	font-size: 12px;
+	line-height: 1.5;
+}
+.works_event dl dt,
+.works_event dl dd {
+	display: table-cell;
+	vertical-align: top;
+	word-break: break-all;
+}
+
+/* works_photos
+----------------------------------------------------------- */
+.works_photos {
+	text-align: center;
+}
+.works_photos h3 {
+	text-align: left;
+	border-bottom: dotted 1px #ccc;
+}
+.works_photos_list {
+	display: inline-flex;
+	align-content: center;
+	justify-content: center;
+}
+.works_photos_list li + li {
+	margin-left: 15px;
+}
+.works_photos_list li {
+	display: block;
+	float: left;
+	margin-top: 20px;
+}
+.works_photos_list li a {
+	display: inline-flex;
+	height: 150px;
+	width: 150px;
+	overflow: hidden;
+	position: relative;
+}
+.works_photos_list li a img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	max-width: 100%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	display: block;
+}
+
+/* SP
+----------------------------------------------------------- */
+@media only screen and (max-width: 980px) {
+	.works_photos_list li {
+		float: auto;
+		width: 50%;
+	}
+	.works_photos_list li a {
+    height: 100%;
+    width: 100%;
+	}
+	.works_photos_list li a img {
+		display: block;
+		position: static;
+		top: 0;
+		left: 0;
+		margin-right: auto;
+		transform: translate(0, 0);
+		margin: auto;
+	}
+}
+@media only screen and (max-width: 590px) {
+	.works_photos_list li {
+		width: 100%;
+	}
+}	

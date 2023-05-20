@@ -1,0 +1,25 @@
+﻿@charset "UTF-8";
+
+/* -------------------------------
+サイト名： OFFICIAL WEB SITE
+作成日：2023.03.12
+修正日：
+製作者：hayakawa
+ * ------------------------------- */
+
+/* admin
+----------------------------------------------------------- */
+@charset "UTF-8";
+
+
+/* default_post
+----------------------------------------------------------- */
+.inside {
+  font: 1rem 'Fira Sans', sans-serif;
+}
+.inside input {
+  margin: 0.4rem;
+}
+.inside fieldset + fieldset {
+  margin-top: 12px;  
+}

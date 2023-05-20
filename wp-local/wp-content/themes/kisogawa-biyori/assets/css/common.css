@@ -1,0 +1,190 @@
+﻿@charset "UTF-8";
+
+/* -------------------------------
+サイト名： OFFICIAL WEB SITE
+作成日：2022.01.10
+修正日：
+製作者：hayakawa
+ * ------------------------------- */
+
+/* common
+----------------------------------------------------------- */
+@charset "UTF-8";
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline
+}
+body {
+	line-height: 1.5;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	line-height: 1;
+	font-family: 'Crimson Text',"Yu Mincho Medium", "游明朝体", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+	font-size: 14px;
+	color: #444;
+	min-height: 100vh;
+	font-size: 12px;
+	-webkit-text-size-adjust: 100%;
+}
+article,aside,details,figcaption,figure,footer,header,main,hgroup,menu,nav {
+	display: block;
+	width: 100%;
+	margin: auto;
+}	
+article,aside,details,figcaption,figure,footer,header,main,hgroup,menu,nav {
+	display: block;
+	width: 100%;
+	margin: auto;
+}
+ol,ul {
+	list-style: none
+}
+blockquote,q {
+	quotes: none
+}
+blockquote:after,blockquote:before,q:after,q:before {
+	content: '';
+	content: none
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box
+}
+*,:after,:before {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit
+}
+button,input,select,textarea {
+	font-family: inherit;
+	color: #3b1800;
+	line-height: 1.5
+}
+a,
+a:link,
+a:visited {
+	color: #999;
+	text-decoration: none;
+}
+a:hover {
+	opacity: .7;
+}
+header {
+	margin-top: 15px;
+	padding: 0 12px;
+}
+main {
+	padding: 0 12px;
+	min-height: 100%;
+}
+footer {
+	display: inline-block;
+	margin-top: 25px;
+	clear: both;
+}
+
+/* logo
+----------------------------------------------------------- */
+header h1 {
+	text-align: right;
+}
+.logo a {
+	display: inline-block;
+}
+.logo a img {
+	max-width: 100%;
+}
+
+/* gnavi
+----------------------------------------------------------- */
+.gnavi_list {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 12px 0;
+	border-bottom: dotted 1px #ccc;
+}
+.gnavi_list li {
+	color: #999;
+	font-size: 16px;
+}
+.gnavi_list li + li {
+	margin-left: 20px;
+}
+.gnavi_list li a:hover::after {
+	-webkit-transition-duration: .5s;
+	transition-duration: .5s;
+	width: 100%;
+}
+.gnavi_list li a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0;
+	height: 1px;
+	background-color: #000;
+}
+.gnavi_list li a {
+	position: relative;
+	padding-bottom: 5px;
+}
+
+/* sns
+----------------------------------------------------------- */
+.sns {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 10px;
+	height: 74px;
+}
+.sns li + li {
+	margin-left: 4px;
+}
+.sns li a {
+	display: inline-block;
+	vertical-align: top;
+}
+.sns li a img {
+	width: 20px;
+}
+a.tel,
+a.mail {
+	color: #444;
+}
+/* note
+----------------------------------------------------------- */
+.note_wrap {
+	margin: 10px 0; 
+}
+.note {
+	color: #f00;
+	font-size: 11px;
+	margin: 0 4px;
+}
+
+/* footer
+----------------------------------------------------------- */
+.copy {
+	background-color: #888;
+	color: white;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 3;
+}
+
+
+
+
+
+
+

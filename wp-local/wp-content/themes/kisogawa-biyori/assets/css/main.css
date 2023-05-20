@@ -1,0 +1,580 @@
+﻿@charset "UTF-8";
+
+/* -------------------------------
+サイト名： OFFICIAL WEB SITE
+作成日：2011.12.7
+修正日：
+製作者：CI miyake
+ * ------------------------------- */
+
+/*
+@import "reset.css";
+*/
+
+
+body {
+	margin:0px;
+	padding:0px;
+	position: relative;
+	color: #333333;
+	background: url(../img/bg01.gif) center top repeat fixed #ffffff;
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+	text-align: center;
+
+word-break:break-all;
+
+    word-wrap: break-word;
+
+
+
+}
+
+
+div,span,
+table,thead,tbody,caption,tr,th,td,
+form,fieldset,legend,label,
+h1,h2,h3,h4,h5,h6,
+ul,ol,li,
+dl,dt,dd,
+p,
+blockquote,q,
+pre,
+img,
+a,
+strong,em,strike,i,u,sup,sub,
+address,
+map,area,
+abbr,acronym
+{
+	margin: 0;
+	padding: 0;
+/*	border-style: none;*/
+	font-size: 100%;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	text-indent: 0;
+/*	list-style-type: none;*/
+
+}
+
+input,
+select,
+textarea{
+	margin: 0;
+	padding: 0;
+/*	border-style: none;*/
+}
+
+
+
+/* -------------------------------
+ * メインレイアウト
+ * ------------------------------- */
+
+#boxleft {				/*左側*/
+	width:		690px;
+	float:		left;
+}
+
+#boxright {				/*右側*/
+	width:		297px;
+	float:		left;
+}
+
+#boxbottom {				/*下側*/
+	width:		100%;
+	clear:		left;
+}
+
+
+/* -------------------------------
+ * レイアウト
+ * ------------------------------- */
+
+#container {
+	margin:	0px auto;
+	width:	1000px;
+	text-align:	left;
+	background-color:#fff;
+//	background-image:url(../img/bg01.jpg);
+//	background-repeat:repeat-y;
+	background-position:center top;
+	background-attachment: fixed;
+}
+
+#top_logo {
+	width:		1000px;
+	height:		80px;
+	margin-left:	0px;
+	background-image:url(img/top_logo.png);
+	background-repeat:no-repeat;
+}
+
+#header_logo {
+	width:		979px;
+	height:		70px;
+	margin-left:	4px;
+	background-image:url(../img/header.jpg);
+	background-repeat:no-repeat;
+}
+
+#top_line1 {
+	width:		961px;
+	height:		25px;
+	background-image:url(../img/top_line1.gif);
+	margin-left:	13px;
+}
+
+#top_line2 {
+	width:		961px;
+	height:		9px;
+	background-image:url(../img/top_line2.gif);
+	margin-left:	13px;
+}
+
+#top_line3 {
+	width:		961px;
+	height:		11px;
+	background-image:url(../img/top_line3.gif);
+	margin-left:	13px;
+}
+
+#top_line4 {
+	width:		961px;
+	height:		4px;
+	background-image:url(../img/top_line4.gif);
+	margin-left:	13px;
+}
+
+
+#top_flash {
+	width:		1000px;
+	height:		320px;
+	margin-left:	0px;
+}
+
+#box1_top {
+	width:		660px;
+	height:		22px;
+	margin-top:	0px;
+	margin-left:	24px;
+}
+
+#box1_body {
+	width:		660px;
+	height:		auto;
+	margin-top:	0px;
+	margin-left:	24px;
+	background-image:url(../img/top_boxB.gif);
+}
+
+#box1_bottom {
+	width:		660px;
+	height:		4px;
+	margin-top:	0px;
+	margin-left:	24px;
+}
+
+
+
+
+
+#box2_top {
+	width:		251px;
+	height:		auto;
+	margin-top:	0px;
+	margin-left:	4px;
+}
+
+#box2_body {
+	width:		251px;
+	height:		auto;
+	margin-top:	0px;
+	margin-left:	4px;
+	background-image:url(../img/box2_body.jpg);
+}
+
+#box2_bottom {
+	width:		251px;
+	height:		auto;
+	margin-top:	0px;
+	margin-left:	4px;
+}
+
+#box3_body {
+	width:		251px;
+	height:		auto;
+	margin-top:	0px;
+	margin-left:	4px;
+	background-image:url(../img/box3_body.jpg);
+}
+
+
+#box2_list {
+margin: auto auto auto 30px;
+padding:10px 5px 10px 0px;
+list-style-image:url("../img/maru.png") ;
+}
+
+
+#box3_list {
+margin: auto auto auto 40px;
+padding:10px 5px 10px 0px;
+list-style-image:none;
+list-style-type:decimal;
+}
+
+
+
+#page_title {
+	width:		660px;
+	height:		30px;
+	background-image:url(../img/title_back.jpg);
+	background-repeat:repeat-x;
+	margin-top:	0px;
+	margin-left:	18px;
+	padding:4px 0px 0px 20px;
+	font-size:14px;
+}
+
+
+#page_title2 {
+	width:		920px;
+	height:		30px;
+	background-image:url(../img/title_back.jpg);
+	background-repeat:repeat-x;
+	margin-top:	0px;
+	margin-left:	18px;
+	padding:4px 0px 0px 20px;
+	font-size:14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#banner {
+	width:		252px;
+	height:		60px;
+	margin-top:	10px;
+	margin-left:	4px;
+}
+
+#Advertisement {
+	width:		979px;
+	height:		auto;
+	margin-top:	0px;
+	margin-left:	4px;
+	background-color:#294c72;
+	background-image:url(../img/bg03.jpg);
+	background-repeat:no-repeat;
+	background-position:center top;
+}
+
+#footer {
+	width:		979px;
+	height:		auto;
+	margin-top:	0px;
+	margin-left:	4px;
+	background-color:#fff;
+}
+
+#em1 {
+	width:		677px;
+	height:		auto;
+	margin-top:	0px;
+	margin-left:	18px;
+	background-color:#fff;
+	background-image:url(../img/em1.jpg);
+	background-repeat:no-repeat;
+	background-position:left top;
+	border:1px solid #990000;
+}
+
+#em2 {
+	width:		677px;
+	height:		auto;
+	margin-top:	0px;
+	margin-left:	0px;
+	background-color:#fff;
+	border:1px solid #990000;
+}
+
+#mail_send {
+	width:		677px;
+	height:		auto;
+	margin-top:	0px;
+	margin-left:	18px;
+	background-color:#eab5c3;
+	border:1px solid #6b86d6;
+}
+
+#info_box1 {
+	width:		677px;
+	height:		auto;
+	margin-top:	0px;
+	margin-left:	18px;
+	background-color:#e7fade;
+	border:2px solid #63d100;
+}
+
+#info_box2 {
+	width:		677px;
+	height:		auto;
+	margin-top:	0px;
+	margin-left:	18px;
+	background-color:#ffffdd;
+	border:2px solid #d5d23b;
+}
+
+#info_box3 {
+	width:		677px;
+	height:		auto;
+	margin-top:	0px;
+	margin-left:	18px;
+	background-color:#f2f2f2;
+	border:2px solid #009999;
+}
+
+#tabheader {
+	margin-top:	0px;
+	margin-left:	35px;
+}
+
+
+
+
+
+
+#toptext {
+	width:		692px;
+	height:		50px;
+	margin-top:	25px;
+	margin-left:	10px;
+	margin-bottom:	10px;
+}
+
+#honbun {
+	width:		650px;
+	padding:	0px 0px 20px 30px;
+}
+
+
+/* -------------------------------
+ * メニュー
+ * ------------------------------- */
+
+#topmenu1 {
+	clear: both;
+	margin:0;
+	padding:0;
+	width: 961px;
+	height: 32px;
+	background-color:#222222;
+	background: url(../img/topmenu_bk.jpg);
+	list-style:none;
+	margin-left:	13px;
+}
+
+#topmenu1 li {
+	float: left;
+}
+
+#topmenu1 li a {
+	display: block;
+	height: 32px;
+	background: url(../img/topmenu1.jpg) left top no-repeat;
+	text-indent: -9999px;
+}
+
+#topmenu1 li.bt01 a {
+	width:		120px;
+	background-position: 0 0;
+}
+#topmenu1 li.bt01 a:hover {
+	background-position: 0 -32px;
+}
+
+#topmenu1 li.bt02 a {
+	width:		120px;
+	background-position: -120px 0;
+}
+#topmenu1 li.bt02 a:hover {
+	background-position: -120px -32px;
+}
+
+#topmenu1 li.bt03 a {
+	width:		120px;
+	background-position: -240px 0;
+}
+#topmenu1 li.bt03 a:hover {
+	background-position: -240px -32px;
+}
+
+#topmenu1 li.bt04 a {
+	width:		120px;
+	background-position: -360px 0;
+}
+#topmenu1 li.bt04 a:hover {
+	background-position: -360px -32px;
+}
+
+#topmenu1 li.bt05 a {
+	width:	120px;
+	background-position: -480px 0;
+}
+#topmenu1 li.bt05 a:hover {
+	background-position: -480px -32px;
+}
+
+#topmenu1 li.bt06 a {
+	width:	120px;
+	background-position: -600px 0;
+}
+#topmenu1 li.bt06 a:hover {
+	background-position: -600px -32px;
+}
+
+#topmenu1 li.bt07 a {
+	width:	120px;
+	background-position: -720px 0;
+}
+#topmenu1 li.bt07 a:hover {
+	background-position: -720px -32px;
+}
+
+#topmenu1 li.bt08 a {
+	width:	121px;
+	background-position: -840px 0;
+}
+#topmenu1 li.bt08 a:hover {
+	background-position: -840px -32px;
+}
+
+
+
+
+
+/* -------------------------------
+ * 文字
+ * ------------------------------- */
+
+.font01 {
+	font-size:18px;
+	color:		#fe9900;
+}
+
+.font02 {
+	font-size:13px;
+	color:		#222222;
+}
+
+.font03 {
+	font-size:14px;
+	color:		#222222;
+	font-weight:	bold;
+}
+
+.font04 {
+	font-size:11px;
+	color:		#444444;
+}
+
+.info_font1 {
+	font-size:13px;
+	color:		#222222;
+	padding:	3px 0px 0px 10px;
+}
+
+.info_font2 {
+	font-size:12px;
+	color:		#222222;
+	padding:	10px 10px 0px 10px;
+}
+
+.rireki_font {
+	font-size:	12px;
+	color:		#fe9900;
+	padding:	0px 0px 0px 280px;
+}
+
+.footer_font1 {
+	font-size:	13px;
+	color:		#555555;
+	text-align:	center;
+	padding:	10px 0px 0px 0px;
+}
+
+.footer_font2 {
+	font-size:	12px;
+	color:		#555555;
+	text-align:	center;
+	padding:	15px 0px 20px 0px;
+}
+
+.footer_font2 img { 
+	vertical-align:	-4px;
+} 
+
+
+/* -------------------------------
+ * リンク
+ * ------------------------------- */
+ 
+a {
+	cursor:		pointer;
+	outline:	none;
+}
+
+a img {
+	border:		0;
+}
+
+a:link {
+	color:		#444444;
+	text-decoration:none;
+}
+
+a:visited {				/*リンク済み*/
+	color:		#440099;
+	text-decoration:none;
+}
+
+a:hover {
+	color:		#f82222;
+	text-decoration:underline;
+}
+
+a:active {
+	color:		#f8b500;
+	text-decoration:underline;
+}
+
+//.link {
+//   background:transparent url(../img/link.gif) center right no-repeat;
+//   padding-right:37px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
