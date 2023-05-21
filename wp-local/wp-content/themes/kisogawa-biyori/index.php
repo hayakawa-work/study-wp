@@ -57,7 +57,15 @@
 		<article class="news_contents">
 			<!-- works_header -->
 			<section class="works_header">
-				<h2 class="works_header_title"><?php the_title(); ?></h2>
+				<h2 class="works_header_title"><?php the_title(); ?>
+				<?php 
+					if (get_post_meta($post->ID, "information_status", true) == 'information_status1') {
+							echo '<span class="note">NEW</span>';
+					} elseif (get_post_meta($post->ID, "information_status", true) == 'information_status2') {
+							echo '<span class="note">終了しました</span>';
+					} 
+				?>
+				</h2>
 				<div class="works_profile">
 					<div class="works_profile_photo">
 						<?php if ( has_post_thumbnail() ) { // 投稿にアイキャッチ画像が割り当てられているか。
@@ -69,11 +77,22 @@
 			</section>
 			<!-- //works_header -->
 			<p class="note_wrap">
-				<span class="note">※新型コロナウイルス感染症の状況等により予定が変更となる場合があります。あらかじめご了承ください。</span>
+			<?php 
+				if (get_post_meta($post->ID, "infection_notice_status", true) == 'is-on') 
+				echo '<span class="note">※新型コロナウイルス感染症の状況等により予定が変更となる場合があります。あらかじめご了承ください。</span>'
+			?>
 			</p>
 			<!-- works_event -->
 			<section class="works_event">
-				<h3 class="works_event_title"><?php the_title(); ?></h3>
+				<h3 class="works_header_title"><?php the_title(); ?>
+				<?php 
+					if (get_post_meta($post->ID, "information_status", true) == 'information_status1') {
+							echo '<span class="note">NEW</span>';
+					} elseif (get_post_meta($post->ID, "information_status", true) == 'information_status2') {
+							echo '<span class="note">終了しました</span>';
+					} 
+				?>
+				</h3>
 				<div class="works_event_content"><?php the_content(); ?></div>
 			</section>
 			<!-- //works_event -->
