@@ -26,4 +26,10 @@ function enqueue_my_scripts(){
 
 }
 add_action('wp_enqueue_scripts', 'enqueue_my_scripts');
+
+@include_once('functions/menu_setup.php');
+@include_once('functions/post_setup.php');
+@include_once('functions/post.php');
+
 ?>
+
