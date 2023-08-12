@@ -29,10 +29,10 @@
 define( 'DB_NAME', 'wp-local' );
 
 /** データベースのユーザー名 */
-define( 'DB_USER', 'dbuser' );
+define( 'DB_USER', 'root' );
 
 /** データベースのパスワード */
-define( 'DB_PASSWORD', 'dbuser' );
+define( 'DB_PASSWORD', 'root' );
 
 /** データベースのホスト名 */
 define( 'DB_HOST', 'localhost' );
