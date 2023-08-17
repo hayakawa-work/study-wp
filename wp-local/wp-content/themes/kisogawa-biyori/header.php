@@ -2,14 +2,7 @@
 <!-- TOP-IMG ------------------------------------------------------------ -->
 <h1 class="logo"><a href="index.html"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/top_logo.png" alt="kisogawa-biyori"></a></h1>
 <!-- TOP-MENU ----------------------------------------------------------- -->
-		<nav id="gnavi">
-			<ul class="gnavi_list">
-				<li><a href="sub/about.html"><span>about</span></a></li>
-				<li><a href="sub/archive.html"><span>archive</span></a></li>
-				<li><a href="sub/supporter.html"><span>supporter</span></a></li>
-				<li><a href="sub/mail.html"><span>mail</span></a></li>
-			</ul>
-		</nav>
+		<?php breadcrumb(); ?>
 <!--- トップイメージ --->
 		<ul class="slider jsc-slider">
 			<li><p class="top_image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/archives/2019/img/top.png"></p></li>
